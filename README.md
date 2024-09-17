@@ -96,6 +96,12 @@ Para iniciar Solr y la aplicación con Docker Compose, ejecuta:
 docker-compose up --build
 ```
 
+## App Web
+
+Arrancamos la aplicación Web 
+```bash
+streamlit run src\app.py --server.port 8502 --server.address 0.0.0.0
+```
 Esto levantará el servicio de Solr y otros componentes que se hayan definido en el archivo `docker-compose.yml`.
 
 ## Licencia
