@@ -49,6 +49,8 @@ services:
       MYSQL_DATABASE: mydb
       MYSQL_USER: user
       MYSQL_PASSWORD: user**4321!
+      MYSQL_INITDB_SKIP_TZINFO: 'true'
+      MYSQL_INNODB_FORCE_RECOVERY: 4  # Nivel de recuperación
     ports:
       - "3306:3306"
     volumes:
